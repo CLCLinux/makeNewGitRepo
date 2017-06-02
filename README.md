@@ -17,7 +17,7 @@
   - Next you can execute the following curl command that will issue a POST to the Github API creating a new empty repo with your user into the CLCLinux organization with the name of your current directory.  
                 curl -u "$github_user" https://api.github.com/orgs/$github_org/repos -d "{\"name\":\"makeNewGitRepo\"}"  
  
-#### Locally add files to your repository####
+#### Locally add files to your repository ####
 - make sure you are at the root of the newly created local directory representing your repository.  
 - Check the status of your files by running the following command:  
                 git status
@@ -40,7 +40,7 @@
             git commit -m "This is a comment explaining what changes were made to this file"  
     At this point the file has been committed and has a saved version in the history of this repo.
 
-#### Pushing the local repositories contents to the remote in Github####
+#### Pushing the local repositories contents to the remote in Github ####
 - Now that we are ready to push the changes in our local repository up to the remote repository in Github we will want to set the configuration for our local repository to know where the remote repository is at. We do this by issuing the following command:  
             git remote add origin https://github.com/$github_org/makeNewGitRepo.git  
     Note: We set the variable $github_org above in the terminal. Now our local repository configuration knows where to push to.
